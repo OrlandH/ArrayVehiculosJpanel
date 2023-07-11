@@ -117,21 +117,7 @@ public class Vehiculos {
                     respuestaL.setText("No existen datos");
                 }
                 else {
-                    String auxL = search.getText();
-                    String[] partes = auxL.split(" ");
-                    System.out.println(partes[1]);
-                    int auxfor = carrosM.size();
-                    for(int j = 0; i<auxfor; j++){
 
-                        if(carrosM.get(j) ==partes[0] || carrosA.get(j)==partes[1]){
-                            marcaT.setText((String) carrosM.get(j));
-                            anioT.setText((String) carrosA.get(j));
-                            cilinT.setText((String) carrosC.get(j));
-                        }
-                        else{
-                            respuestaL.setText("No existe este vehiculo");
-                        }
-                    }
                 }
             }
         });
